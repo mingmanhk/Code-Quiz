@@ -169,7 +169,6 @@ function startTimer() {
     if (timerCount === 0) {
       // Clears interval
         clearInterval(timer);
-        console.log("game over "+ scoresEl.style.display)
         //Time up end game
         if (scoresEl.style.display != "block") { displayscore(); };
     }
@@ -200,9 +199,7 @@ function showHighscores() {
     else {
         for (var i = 0; i < localstoredHighscores.length; i++) {
             var li = document.createElement("li");
-              li.setAttribute("style", "background-color:#e9ddfa");
-            console.log("record " + i);
-             console.log(i+1 +". " + localstoredHighscores[i][0] + " - " +localstoredHighscores[i][1]);
+            li.setAttribute("style", "background-color:#e9ddfa");
             li.textContent = i+1 +". " + localstoredHighscores[i][0] + " - " +localstoredHighscores[i][1];
             highscoresoptionEl.appendChild(li);
         }
