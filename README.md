@@ -1,4 +1,4 @@
-# 04 Web APIs: Code Quiz
+# Code Quiz
 This is the homework assignment to create a quiz exam
 
 ## Acceptance Criteria
